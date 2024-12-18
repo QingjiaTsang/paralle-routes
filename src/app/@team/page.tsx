@@ -1,3 +1,3 @@
 export default function Page() {
-  return <div>Team parallel page</div>;
+  return <div className='bg-green-600 h-64 w-64'>Team parallel page</div>;
 }
