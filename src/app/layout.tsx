@@ -15,7 +15,7 @@ export default function RootLayout({
    * 1. 访问 /
    *  * 你会看到parallel routes的字面意思，会在同一个layout里同时、平行地渲染多个page
    * 2. 点击路由link跳转到 /settings
-   *  * 你会看到所谓的 partial render，只有settings page被渲染，而layout和analytics page没有被渲染
+   *  * 你会看到所谓的 partial render，只有settings page被重新渲染，而layout和analytics page没有被重新渲染
    * 3. 跳转到路由 /settings 后，刷新页面
    *  * 你会看到当@analytics文件夹下没有settings路由的时候，会显示@analytics/default.tsx的内容，因为此时并没有命中其下的任何路由，但在layout中analytics slot仍然需要被渲染，因此需要default.tsx来兜底
    */
